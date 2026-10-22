@@ -1,0 +1,22 @@
+.dash-header img{
+    width: 100px;
+}
+
+.dash-header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+    background-color: #cdf5ff;
+}
+
+.sidebar{
+    background-color: #f5f9fb;
+    padding: 10px;
+}
+
+
+dash-wrapper{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
