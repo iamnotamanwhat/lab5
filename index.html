@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <header class="dash-header"> 
-        <img src="assets/logos/logo.jpg" alt="logo">
-        <input type="text" placeholder="Search">
-        <img src="assets/avatar/woman.jpg" alt="User avatar ">
+    <header class="dash-header">
+        <img src="assets/logos/logo.jpg" alt="Company logo">
+        <input type="search" placeholder="Search" aria-label="Search">
+        <img src="assets/avatar/woman.jpg" alt="User avatar">
     </header>
 
     <div class="dash-wrapper">
@@ -25,65 +25,67 @@
                     <li><a href="#">Settings</a></li>
                 </ul>
             </nav>
-            </ul>
-
-            <a href="">Logout</a>
-
+            <a class="logout" href="#">Logout</a>
         </aside>
 
         <main class="dash-content">
             <section class="stats-grid">
-
                 <article>
-                    <h2> Total users</h2>
-                    <p> 12,300</p>
-                    <p> 12% this month</p>
+                    <h2>Total Users</h2>
+                    <p class="value">12,300</p>
+                    <p class="trend">+12% this month</p>
                 </article>
 
                 <article>
-                    <h2> Total bugs</h2>
-                    <p> 32</p>
-                    <p> -6% this month</p>
+                    <h2>Total Bugs</h2>
+                    <p class="value">32</p>
+                    <p class="trend">-6% this month</p>
                 </article>
 
                 <article>
-                    <h2> Total contributions</h2>
-                    <p> 260 pushes</p>
-                    <p> -5% this month</p>
+                    <h2>Total Contributions</h2>
+                    <p class="value">260 pushes</p>
+                    <p class="trend">-5% this month</p>
                 </article>
 
                 <article>
-                    <h2> New users</h2>
-                    <p> 1,230</p>
-                    <p> 17% this month</p>
-                </article>                
-
+                    <h2>New Users</h2>
+                    <p class="value">1,230</p>
+                    <p class="trend">+17% this month</p>
+                </article>
             </section>
 
             <section class="body-split">
-                <article>
-
-                    <h2> Project Showcase</h2>
-                    <img src="assets/images/project1.jpg">
-                    <img src="assets/images/project2.jpg">
-                    
+                <article class="showcase">
+                    <h2>Project Showcase</h2>
+                    <div class="project-grid">
+                        <figure>
+                            <img src="assets/images/project1.jpg" alt="Waterfront building project">
+                            <figcaption>Harbour Pavilion</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/project2.jpg" alt="Steel frame walkway project">
+                            <figcaption>Steel Walkway</figcaption>
+                        </figure>
+                    </div>
                 </article>
 
-                <article>
-                    <h2> Recent Activity</h2>
-                    <p> - Audit log feed</p>
+                <article class="activity">
+                    <h2>Recent Activity</h2>
+                    <ul>
+                        <li><strong>Sarah Chen</strong> updated project settings <time>2 mins ago</time></li>
+                        <li><strong>Omar Ali</strong> uploaded a report <time>15 mins ago</time></li>
+                        <li><strong>Priya Patel</strong> closed bug #482 <time>1 hour ago</time></li>
+                        <li><strong>Liam Wong</strong> pushed 3 commits <time>3 hours ago</time></li>
+                        <li><strong>Emma Brown</strong> added 2 new users <time>Yesterday</time></li>
+                    </ul>
                 </article>
-
             </section>
-
-
         </main>
-
     </div>
 
     <footer class="dash-footer">
-        <p>(c) 2026 CCT30 Analytics Portal - Midterm Exam</p>
+        <p>&copy; 2026 CCT360 Analytics Portal - Midterm Exam</p>
     </footer>
-
 </body>
 </html>
